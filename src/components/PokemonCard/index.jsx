@@ -16,10 +16,10 @@ export default function PokemonCard({name, image, types}) {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345}}>
       <CardMedia
         sx={{ height: 200 }}
-        image={image}
+        image={image} 
         title="green iguana"
       />
       <CardContent>
