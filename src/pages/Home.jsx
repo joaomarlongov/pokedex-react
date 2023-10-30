@@ -32,6 +32,7 @@ export const Home = () => {
             for (let i in pokemons){
                 if(pokemons[i].data.name.includes(name)){
                     filteredPokemons.push(pokemons[i])
+                    
                 }
             }
             setPokemons(filteredPokemons)

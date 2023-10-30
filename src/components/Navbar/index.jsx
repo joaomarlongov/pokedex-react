@@ -64,7 +64,7 @@ export default function Navbar({pokemonFilter}) {
           >
             Pokedex
           </Typography>
-          <Search onChange={(e) => pokemonFilter(e.target.value)}>
+          <Search onChange={(e) => pokemonFilter(e.target.value.toLowerCase())}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
