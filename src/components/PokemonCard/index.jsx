@@ -31,7 +31,7 @@ export default function PokemonCard({name, image, types}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Comparar</Button> 
+        <Button size="small">Ver mais</Button> 
       </CardActions>
     </Card>
   );

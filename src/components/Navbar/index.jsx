@@ -54,7 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar({pokemonFilter}) {
   return (
     <Box sx={{ flexGrow: 1, marginBottom: "1.5em" }}>
-      <AppBar position="static" sx={{backgroundColor:"#8d0000"}}>
+      <AppBar position="static" sx={{backgroundColor:"#dc6b6b"}}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -62,7 +62,7 @@ export default function Navbar({pokemonFilter}) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Pokedex
+           <img src="/assets/poke-logo.png" alt="" style={{height:"40px"}}/>
           </Typography>
           <Search onChange={(e) => pokemonFilter(e.target.value.toLowerCase())}>
             <SearchIconWrapper>
