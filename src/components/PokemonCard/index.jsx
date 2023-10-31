@@ -16,7 +16,7 @@ export default function PokemonCard({name, image, types}) {
   }
 
   return (
-    <Card sx={{ maxWidth: 345}}>
+    <Card sx={{ maxWidth: 300}}>
       <CardMedia
         sx={{ height: 200 }}
         image={image} 

@@ -42,6 +42,9 @@ export const Home = ({setPokemonData}) => {
             setPokemons(filteredPokemons)
         }
     
+        const primeiraLetraM = (string) => {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
 
         const pokemonPickHandler = (pokemonData) => {
             setPokemonData(pokemonData)
@@ -57,7 +60,7 @@ export const Home = ({setPokemonData}) => {
                     pokemons.map((pokemon, key) => 
                     <Grid item xs={12} sm={6} md={4} lg={2} key={key}>
                         <Box onClick={() => pokemonPickHandler(pokemon.data)}>
-                            <PokemonCard name={pokemon.data.name} image={pokemon.data.sprites.front_default} types={pokemon.data.types}/>
+                            <PokemonCard name={primeiraLetraM(pokemon.data.name)} image={pokemon.data.sprites.front_default} types={pokemon.data.types}/>
                         </Box>
                     </Grid>)}
                 </Grid>
