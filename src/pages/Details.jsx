@@ -3,10 +3,6 @@ import Navbar from "../components/Navbar"
 import { PokemonDetails } from "../components/PokemonDetails"
 
 
-
-
-import axios from "axios";
-import { useState, useEffect } from "react"
 import PokemonStats from "../components/PokemonStats";
 
 
